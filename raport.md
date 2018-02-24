@@ -25,7 +25,7 @@ va nous permettre de leurs traiter.
 Wage represente l'age de la femme 
 
 - Wife's education               (categorie)      
-Wedu representer le niveau d'education de la femme
+Wedu representer le niveau d'education de la femme.
 	Transformation : 
 	1=low, 2, 3, 4=high
 
