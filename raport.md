@@ -1,15 +1,15 @@
-#Présentation de l'environement de travail 
+# Présentation de l'environement de travail 
 Pour méner à bien notre project, nous avons utiliser le langage R  open source ainsique sont environement Serveur web déployé sur 
 la distribution Linux Debian. R est un outil utiliser pour les statistiques, l'analyse des données et la visualisation.
 
 
-#Présentation du jeu de donnée 
+# Présentation du jeu de donnée 
 
 Notre jeu donnée a une taille de 1473 et represente un sous ensemble des données de l'enquete sur la contraception des femmes mariées
 non enceinte ou qui ne save pas qu'elle sont enceinte au moment de l'enquete en Indonesie.
 
 
-#Pretraitement de donnée 
+# Pretraitement de donnée 
 
 Avant toute analyse sur notre jeu de données, nous allons suivre les étapes ci-dessous : 
 
