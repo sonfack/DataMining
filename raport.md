@@ -2,6 +2,10 @@
 Pour méner à bien notre project, nous avons utiliser le langage R  open source ainsique sont environement Serveur web déployé sur 
 la distribution Linux Debian. R est un outil utiliser pour les statistiques, l'analyse des données et la visualisation.
 
+# Présentation du problème 
+Le probleme est de predire la méthode de contraception d'une femme en se basant sur les criteres démographique et socio-economique. 
+Notons que cette méthode peut être courte, longue ou pas de méthode du tout.
+  
 
 # Présentation du jeu de donnée 
 
@@ -85,7 +89,7 @@ La vérification de notre jeu de données fait appel à l'outil R vu que la tail
 	[1] 1473   10
 '''
 - Vérificaiton de la strucutre 
-'''
+´´´
 	str(cmc)
 	'data.frame':	1473 obs. of  10 variables:
 	 $ Wage   : int  24 45 43 42 36 19 38 21 27 45 ...
@@ -98,11 +102,7 @@ La vérification de notre jeu de données fait appel à l'outil R vu que la tail
 	 $ Stdlind: int  3 4 4 3 2 3 2 2 4 2 ...
 	 $ Mexp   : int  0 0 0 0 0 0 0 0 0 1 ...
 	 $ Cmethod: int  1 1 1 1 1 1 1 1 1 1 ...
-'''
+´´´
 
------------------------------------------------------------------------------------------
 
-Le probleme est de predire la méthode de contraception d'une femme en se basant sur les criteres démographique et socio-economique. 
-Notons que cette méthode peut être courte, longue ou pas de méthode du tout.
-  
  
