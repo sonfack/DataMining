@@ -79,17 +79,17 @@ Après une vérification minisieuse sur notre jeu de données, nous n'avons nis 
 nous n'avons rien à ajouter ni retirer sur notre jeu de données. 
 - Vérification de donnée 
 La vérification de notre jeu de données fait appel à l'outil R vu que la taille de la donnée est grande, nous ne pouvons le faire manuellement. 
-'''
+```
 	class(cmc)
 	[1] "data.frame"
-'''
+```
 - Vérification de la taille et dimension des donnée
-'''
+```
 	dim(cmc)
 	[1] 1473   10
-'''
+```
 - Vérificaiton de la strucutre 
-´´´
+```
 	str(cmc)
 	'data.frame':	1473 obs. of  10 variables:
 	 $ Wage   : int  24 45 43 42 36 19 38 21 27 45 ...
@@ -102,7 +102,7 @@ La vérification de notre jeu de données fait appel à l'outil R vu que la tail
 	 $ Stdlind: int  3 4 4 3 2 3 2 2 4 2 ...
 	 $ Mexp   : int  0 0 0 0 0 0 0 0 0 1 ...
 	 $ Cmethod: int  1 1 1 1 1 1 1 1 1 1 ...
-´´´
+```
 
 
  
