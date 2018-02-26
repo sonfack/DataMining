@@ -25,12 +25,12 @@ va nous permettre de leurs traiter.
 Wage represente l'age de la femme 
 
 - Wife's education               (categorie)      
-Wedu representer le niveau d'education de la femme.
+Wedu representer le niveau d'education de la femme.<br>
 	Transformation : 
 	1=low, 2, 3, 4=high
 
 - Husband's education            (categorie)      
-Hedu reprense le niveau d'educaiton du mari
+Hedu reprense le niveau d'educaiton du mari<br>
 	Transformation : 
 	1=low, 2, 3, 4=high
 
@@ -38,32 +38,32 @@ Hedu reprense le niveau d'educaiton du mari
 Nbchild represente le nombre d enfant du couple 
 
 - Wife's religion                (binaire)           
-Wrelig represente la religion de la femme 
+Wrelig represente la religion de la femme <br>
 	Transformation :
 	0=Non-Islam, 1=Islam
 
 - Wife's now working?            (binaire)          
-Wwork donnée si la femme travail ou pas 
+Wwork donnée si la femme travail ou pas <br>
 	Transformation :
 	 0=Yes, 1=No
 
 - Husband's occupation           (categorie)      
-Hoccup represente la categorie de l'education du mari
+Hoccup represente la categorie de l'education du mari<br>
 	Transformation :
 	1, 2, 3, 4
 
 - Standard-of-living index       (categorie)      
-Stdlind represente l'index du niveau de vie
+Stdlind represente l'index du niveau de vie<br>
 	Transformation :
 	1=low, 2, 3, 4=high
 
 - Media exposure                 (binaire)           
-Mexp represente la couverture mediatique 
+Mexp represente la couverture mediatique <br>
 	Transformation :
 	0=Good, 1=Not good
 
 - Contraceptive method used     (classe) 
-Cmethod  represente la methode de contraception
+Cmethod  represente la methode de contraception<br>
 	Transformation :
 	 1=No-use 
 	 2=Long-term
@@ -104,5 +104,52 @@ La vérification de notre jeu de données fait appel à l'outil R vu que la tail
 	 $ Cmethod: int  1 1 1 1 1 1 1 1 1 1 ...
 ```
 
+# Analyse exploratoire de chaque attribut 
 
- 
+```
+summary(cmc)
+      Wage            Wedu            Hedu         Nbchild           Wrelig      
+ Min.   :16.00   Min.   :1.000   Min.   :1.00   Min.   : 0.000   Min.   :0.0000  
+ 1st Qu.:26.00   1st Qu.:2.000   1st Qu.:3.00   1st Qu.: 1.000   1st Qu.:1.0000  
+ Median :32.00   Median :3.000   Median :4.00   Median : 3.000   Median :1.0000  
+ Mean   :32.54   Mean   :2.959   Mean   :3.43   Mean   : 3.261   Mean   :0.8506  
+ 3rd Qu.:39.00   3rd Qu.:4.000   3rd Qu.:4.00   3rd Qu.: 4.000   3rd Qu.:1.0000  
+ Max.   :49.00   Max.   :4.000   Max.   :4.00   Max.   :16.000   Max.   :1.0000  
+     Wwork            Hoccup         Stdlind           Mexp          Cmethod    
+ Min.   :0.0000   Min.   :1.000   Min.   :1.000   Min.   :0.000   Min.   :1.00  
+ 1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:3.000   1st Qu.:0.000   1st Qu.:1.00  
+ Median :1.0000   Median :2.000   Median :3.000   Median :0.000   Median :2.00  
+ Mean   :0.7495   Mean   :2.138   Mean   :3.134   Mean   :0.074   Mean   :1.92  
+ 3rd Qu.:1.0000   3rd Qu.:3.000   3rd Qu.:4.000   3rd Qu.:0.000   3rd Qu.:3.00  
+ Max.   :1.0000   Max.   :4.000   Max.   :4.000   Max.   :1.000   Max.   :3.00  
+
+
+```
+
+# Analyse de lien entre chaque paire d'atributs
+
+- Wage - Wedu 
+Hypothèse : les femmes agées sont les plus éduquées 
+
+- Wage - Hedu 
+Hypothèse : les femmes agées épouse les hommes agés
+
+- Wage - Nbchild 
+Hypothèse : les femmes agées ont plus d'enfants
+
+- Wage - Wrelig 
+Hypothèse : les femmes agées sont mulsumane
+
+- Wage - Wwork 
+Hypothèse : la plupart des femmes agées travaillent 
+
+- Wage - Hoccup 
+Hypothèse : les femmes agées sont mariées aux hommes qui travaillent
+
+- Wage - Stdlind 
+Hypothèse : les femmes agées ont un niveau de vie élévé
+
+- Wage - Cmethod 
+Hypothèse : les femmes agées n'utilisent pas de méthode de contraception
+
+
