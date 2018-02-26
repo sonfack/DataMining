@@ -128,28 +128,28 @@ summary(cmc)
 
 # Analyse de lien entre chaque paire d'atributs
 
-- Wage - Wedu 
+- Wage - Wedu <br>
 Hypothèse : les femmes agées sont les plus éduquées 
 
-- Wage - Hedu 
+- Wage - Hedu <br>
 Hypothèse : les femmes agées épouse les hommes agés
 
-- Wage - Nbchild 
+- Wage - Nbchild <br>
 Hypothèse : les femmes agées ont plus d'enfants
 
-- Wage - Wrelig 
+- Wage - Wrelig <br>
 Hypothèse : les femmes agées sont mulsumane
 
-- Wage - Wwork 
+- Wage - Wwork <br>
 Hypothèse : la plupart des femmes agées travaillent 
 
-- Wage - Hoccup 
+- Wage - Hoccup <br>
 Hypothèse : les femmes agées sont mariées aux hommes qui travaillent
 
-- Wage - Stdlind 
+- Wage - Stdlind <br>
 Hypothèse : les femmes agées ont un niveau de vie élévé
 
-- Wage - Cmethod 
+- Wage - Cmethod <br>
 Hypothèse : les femmes agées n'utilisent pas de méthode de contraception
 
 
